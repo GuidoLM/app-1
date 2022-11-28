@@ -6,8 +6,8 @@ import Carrusel from './Componets/Carrusel/Carrusel';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
       <Carrusel/>
+      <Navbar/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

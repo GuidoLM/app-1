@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Componets/Navbar/Navbar';
+import Carrusel from './Componets/Carrusel/Carrusel';
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
+      <Carrusel/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

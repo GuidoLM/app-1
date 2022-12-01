@@ -2,12 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Componets/Navbar/Navbar';
 import Carrusel from './Componets/Carrusel/Carrusel';
+import ItemListContainer from './Componets/ItemListContainer/ItemListContainer';
+
 
 function App() {
   return (
     <div className="App">
       <Carrusel/>
       <Navbar/>
+      {/* <ItemListContainer
+      titulo = {"PriceManía"}/> */}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -22,6 +26,7 @@ function App() {
           Learn React
         </a>
       </header>
+      
     </div>
   );
 }

@@ -23,10 +23,10 @@ const Navbar = () => {
                     Marcas
                 </a>
                 <ul class="dropdown-menu">
-                <li><NavLink className="dropdown-item" to="/Marca/+Casa">+Casa</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/Marca/TRUENO">TRUENO</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/Marca/Kenia">Kenia</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/Marca/JuegaPatin">JuegaPatin</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/marca/+Casa">+Casa</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/marca/TRUENO">TRUENO</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/marca/Kenia">Kenia</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/marca/JuguePatin">JuegaPatin</NavLink></li>
                 </ul>
                 </li>
                 <li class="nav-item">

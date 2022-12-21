@@ -49,13 +49,11 @@ let articulos = [
   }
 ]
 
-//No entiendo porque el useParams no me está funcionando
-const {marca} = useParams()
+const Main = () => {
+  const {marca} = useParams()
 console.log(marca)
 
-const filtroMarca = marca ? articulos.filter ((producto) => producto.Marca === marca) : articulos
-
-const Main = () => {
+const filtroMarca = marca ? articulos.filter ((producto) => producto.marca === marca) : articulos
   return (
 
         <div className="d-flex">

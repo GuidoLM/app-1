@@ -14,10 +14,10 @@ function App() {
       <Navbar/>
         <Routes>
           <Route path='/' element={<Main/>}/>
-          <Route path='/Marca/:marca' element={<Main/>}/>
-          <Route path='/Marca/:marca' element={<Main/>}/>
-          <Route path='/Marca/:marca' element={<Main/>}/>
-          <Route path='/Marca/:marca' element={<Main/>}/>
+          <Route path='/marca/:marca' element={<Main/>}/>
+          <Route path='/marca/:marca' element={<Main/>}/>
+          <Route path='/marca/:marca' element={<Main/>}/>
+          <Route path='/marca/:marca' element={<Main/>}/>
         </Routes>
       </Router>
 

@@ -4,9 +4,6 @@ import Navbar from './Componets/Navbar/Navbar';
 import Carrusel from './Componets/Carrusel/Carrusel';
 import Main from './Componets/Main/Main'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Mascasa from './Componets/Marcas/Mascasa';
-import Trueno from './Componets/Marcas/Trueno';
-
 
 function App() {
   return (
@@ -17,8 +14,10 @@ function App() {
       <Navbar/>
         <Routes>
           <Route path='/' element={<Main/>}/>
-          <Route path='/+Casa' element={<Mascasa/>}/>
-          <Route path='/Trueno' element={<Trueno/>}/>
+          <Route path='/Marca/:marca' element={<Main/>}/>
+          <Route path='/Marca/:marca' element={<Main/>}/>
+          <Route path='/Marca/:marca' element={<Main/>}/>
+          <Route path='/Marca/:marca' element={<Main/>}/>
         </Routes>
       </Router>
 

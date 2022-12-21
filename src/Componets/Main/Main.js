@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../Cards/Cards'
+import { useParams } from 'react-router-dom' 
 
 //Esta es la ItemListContainer
 
@@ -48,13 +49,17 @@ let articulos = [
   }
 ]
 
+//No entiendo porque el useParams no me está funcionando
+const {marca} = useParams()
+console.log(marca)
 
+const filtroMarca = marca ? articulos.filter ((producto) => producto.Marca === marca) : articulos
 
 const Main = () => {
   return (
 
         <div className="d-flex">
-        {articulos.map(
+        {filtroMarca.map(
           ({ sku, articulo, precio, img, marca }) => (
             <Card
               titulo={articulo}

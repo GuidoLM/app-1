@@ -52,8 +52,7 @@ let articulos = [
 
 const Main = () => {
   return (
-    <div>
-        <h1>Página Principal</h1>
+
         <div className="d-flex">
         {articulos.map(
           ({ sku, articulo, precio, img, marca }) => (
@@ -65,9 +64,7 @@ const Main = () => {
           )
         )}
         </div>
-       
-        
-    </div>
+ 
   )
 }
 

@@ -8,32 +8,32 @@ import {NavLink} from 'react-router-dom'
 const Navbar = () => {
   return (
     <div>
-        <nav className="navbar navbar-expand-lg" style={{backgroundColor: '#e3f2fd'}}> 
-            <div className="container-fluid">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarScroll">
-                    <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-                        <li className="nav-item">
-                        <NavLink className="nav-link active" aria-current="page" to="/">Price Manía</NavLink>
-                        </li>
-                        <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Marcas
-                        </a>
-                        <ul className="dropdown-menu">
-                            <li><NavLink className="dropdown-item" to="/+Casa">+Casa</NavLink></li>
-                            <li><NavLink className="dropdown-item" to="/Trueno">TRUENO</NavLink></li>
-                        </ul>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link">Ayuda</a>
-                        </li>
-                    </ul>
-                    <Carrito cantidad={3}/>
-                </div>
+        <nav class="navbar navbar-expand-lg" style={{backgroundColor: '#e3f2fd'}}>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <NavLink className="nav-link active" aria-current="page" to="/">Price Manía</NavLink>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                <li><NavLink className="dropdown-item" to="/+Casa">+Casa</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/Trueno">TRUENO</NavLink></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active">Ayuda</a>
+                </li>
+            </ul>
             </div>
+            <Carrito cantidad={3}/>
+        </div>
         </nav>
     </div>
     

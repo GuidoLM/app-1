@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -16,17 +17,8 @@ const Cards = (props) => {
       <div className="card-body">
         <h4 className="card-title">{articulo}</h4>
         <h5>{precio}</h5>
+        <NavLink className="btn btn-primary fondoBoton" to={'/marca/'+{sku}}>Comprar</NavLink>
 
-        <a id='comprar{sku}' className="btn btn-primary fondoBoton">Comprar</a>
-
-        <button
-          type="button"
-          className="btn btn-primary fondoBoton"
-          data-bs-toggle="modal"
-          data-bs-target="#{sku}"
-        >
-          Agregar al carrito
-        </button>
         </div>
     </div>
   )

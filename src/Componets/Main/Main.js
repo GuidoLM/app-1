@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../Cards/Cards'
 import { useParams } from 'react-router-dom' 
+import axios from 'axios'
 
 //Esta es la ItemListContainer
 
@@ -50,7 +51,8 @@ let articulos = [
 ]
 
 const Main = () => {
-  const {marca} = useParams()
+
+const {marca} = useParams()
 console.log(marca)
 
 const filtroMarca = marca ? articulos.filter ((producto) => producto.marca === marca) : articulos

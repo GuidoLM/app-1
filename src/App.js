@@ -5,7 +5,6 @@ import Carrusel from './Componets/Carrusel/Carrusel';
 import Main from './Componets/Main/Main'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import ItemDetailContainer from './Componets/ItemDetailContainer/ItemDetailContainer';
-import Tareas from './Componets/Ejercicio/Tareas'
 import Trueno from './Componets/Trueno/Trueno';
 
 function App() {
